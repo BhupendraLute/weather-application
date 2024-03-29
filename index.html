@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./assets/svgs/cloud-sun.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav>
+        <h1 id="brand"><span><img src="./assets/svgs/cloud-sun.svg" alt="logo"></span> Weather App</h1>
+    </nav>
+
+    <main>
+        <div class="container">
+            <form id="weather-form">
+                <input type="text" id="city-input" placeholder="search for city here...">
+                <button type="submit">
+                    <img src="./assets/svgs/paper-plane.svg" alt="submit-btn">
+                </button>
+            </form>
+
+            <div class="weather-container">
+                <h1>Weather in <span id="city">City</span></h1>
+                <h2><span id="degrees">00.00</span> °C </h2>
+                <h3><img id="weather-logo" src="https://openweathermap.org/img/wn/04n@2x.png" alt="weather-logo"> <span id="atmosphere">cloudy</span></h3>
+                <p class="other-data">Humidity: <span id="humidity">0</span> %</p>
+                <p class="other-data">Wind Speed: <span id="wind-speed">0</span> m/s</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Copyright 2024 - Bhupendra Lute</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

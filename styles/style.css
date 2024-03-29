@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 1vh 6vw;
+}
+
+nav>#brand {
+    background-color: #db9004;
+    color: #fff;
+    padding: 0.4rem 1.2rem;
+    width: fit-content;
+    border-radius: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main {
+    background-image: url("../assets/images/background.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 25rem;
+    background: #00000060;
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    border-radius: 16px;
+    color: #fff;
+    box-shadow: 0 0 8px #ffffff5e;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    border: 1px #8f8f8f solid;
+    border-radius: 50px;
+    padding: 0.4rem;
+    overflow: hidden;
+}
+
+form #city-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.8rem;
+    background: transparent;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+form button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #db9004;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button img {
+    transform: scale(0.8);
+}
+
+form button:hover {
+    background-color: #b27911;
+}
+
+.weather-container {
+    margin-top: 1.8rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.weather-container h3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+#weather-logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+.other-data {
+    color: #9e9e9e;
+}
+
+footer {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background: #00000060;
+    backdrop-filter: blur(5px);
+    padding: 0.3rem 0;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+
+    nav>#brand {
+        padding: 0.3rem 1rem;
+        font-size: 1.4rem;
+    }
+
+    .container {
+        width: 90%;
+        padding: 0.8rem;
+        margin: auto;
+    }
+
+    form {
+        padding: 0.2rem;
+    }
+
+    form #city-input {
+        padding: 0.3rem 0.6rem;
+        font-size: 1rem;
+    }
+    
+    form button {
+        width: 30px;
+        height: 30px;
+    }
+    
+    form button img {
+        transform: scale(0.6);
+    }
+    
+    .weather-container {
+        margin-top: 1.4rem;
+        padding-left: 0.2rem;
+        gap: 0.3rem;
+    }
+    
+    .weather-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .weather-container h3 {
+        gap: 0.8rem;
+    }
+    
+    #weather-logo {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+  }
